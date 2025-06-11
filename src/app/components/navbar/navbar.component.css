@@ -1,0 +1,38 @@
+.appnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: 75%;
+  justify-self: center;
+  font-weight: 500;
+  color: var(--nav-text-color);
+}
+.applogo {
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+.appnav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.appnav li {
+  display: inline-flex;
+  a {
+    font-size: 1em;
+    color: var(--nav-text-color);
+    text-decoration: none;
+  }
+  a:hover {
+    transform: scale(1.2);
+    color: var(--nav-text-color-hover);
+  }
+}
+.appnav li a.active {
+  color: var(--nav-text-color-active);
+}

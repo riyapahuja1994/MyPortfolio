@@ -1,0 +1,18 @@
+<div class="skills">
+  <section class="heading">
+    <h2>Skills & Proficiencies</h2>
+  </section>
+  <section class="skills-list">
+    <div *ngFor="let skill of skills" class="skill">
+      <h3>{{ skill.title }}</h3>
+      <ul>
+        <li *ngFor="let item of skill.items; let index = index">
+          {{ item.name }}<span *ngIf="index != skill.items.length - 1">,</span>
+        </li>
+      </ul>
+      <div class="skill-range">
+        <div class="skill-level"></div>
+      </div>
+    </div>
+  </section>
+</div>

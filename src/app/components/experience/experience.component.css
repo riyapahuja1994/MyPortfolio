@@ -1,0 +1,58 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 2rem;
+}
+
+.experience > section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.duration {
+  display: flex;
+  flex-direction: column;
+  min-width: 20%;
+}
+.duration-role {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  min-width: 80%;
+}
+.duration-role > h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.1em;
+}
+.duration-role > h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0.1em;
+}
+.client-card {
+  display: none;
+}
+.role-details-btn {
+  margin-top: 0.3rem;
+  /* background: linear-gradient(135deg, #bc8f70, #d4a574); */
+  background: linear-gradient(135deg, #a67b5b, #87654d);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(188, 143, 112, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+.role-details-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(188, 143, 112, 0.4);
+  /* background: linear-gradient(135deg, #a67b5b, #bc8f70); */
+  background: linear-gradient(135deg, #715441, #a48059);
+}
