@@ -13,61 +13,66 @@
     <div class="duration-role">
       <h2>Tata Consultancy Services Limited</h2>
       <h3>Information Technology Analyst(Senior Software Engineer)</h3>
-      <button class="role-details-btn">Read More</button>
-      <div class="client-card">
-        <h3 class="client-card-title">Client: T-Mobile USA</h3>
-        <h5 class="client-card-subtitle">Roles and Responsibilities:</h5>
-        <div class="client-card-content">
-          <ul>
-            <li>
-              Developed a real-time Analytics Dashboard using React and Java
-              Spring Boot for network monitoring, customer insights, and KPI
-              visualization.
-            </li>
-            <li>
-              Designed and implemented RESTful and GraphQL APIs with Spring
-              Boot, ensuring efficient data fetching and integration with
-              real-time WebSocket communication for live network status updates.
-            </li>
-            <li>
-              Developed real-time streaming capabilities using Spring WebFlux
-              and WebSockets, enabling interactive data visualizations with
-              Recharts and dynamic network alerts.
-            </li>
-            <li>
-              Ensured code quality and test coverage using Jest, Cypress for
-              frontend and JUnit, Mockito for backend.
-            </li>
-            <li>
-              Built different features and redesigned a complex test data
-              generation module for Test Data Management portal using Angular
-              and Material UI, increasing usage by 50% and reducing user errors
-              by 70%.
-            </li>
-            <li>
-              Integrated Okta SSO and implemented custom HTTP interceptors for
-              token management, enhancing authentication, authorization, and
-              security with Auth guards.
-            </li>
-            <li>
-              Upgraded Angular v7 to v10 which improved performance by reducing
-              bundle size and build times by 20%, built reusable UI components
-              while managing state using NgRx and RxJS and tested using Jasmine
-              & Karma.
-            </li>
-            <li>
-              Collaborated with backend teams to define API contracts, implement
-              efficient data models, and debug APIrelated issues for seamless
-              front-end and backend integration.
-            </li>
-            <li>
-              Mentored junior developers, established front-end best practices
-              and conducted knowledge-sharing sessions, improving team
-              proficiency and accelerating project delivery.
-            </li>
-          </ul>
-        </div>
-      </div>
+      <button class="role-details-btn" (click)="showModalExp2 = true">
+        Read More
+      </button>
+      <app-modal [isOpen]="showModalExp2" (close)="showModalExp2 = false">
+        <app-card class="client-card">
+          <h3 class="client-card-title">Client: T-Mobile USA</h3>
+          <h5 class="client-card-subtitle">Roles and Responsibilities:</h5>
+          <div class="client-card-content">
+            <ul>
+              <li>
+                Developed a real-time Analytics Dashboard using React and Java
+                Spring Boot for network monitoring, customer insights, and KPI
+                visualization.
+              </li>
+              <li>
+                Designed and implemented RESTful and GraphQL APIs with Spring
+                Boot, ensuring efficient data fetching and integration with
+                real-time WebSocket communication for live network status
+                updates.
+              </li>
+              <li>
+                Developed real-time streaming capabilities using Spring WebFlux
+                and WebSockets, enabling interactive data visualizations with
+                Recharts and dynamic network alerts.
+              </li>
+              <li>
+                Ensured code quality and test coverage using Jest, Cypress for
+                frontend and JUnit, Mockito for backend.
+              </li>
+              <li>
+                Built different features and redesigned a complex test data
+                generation module for Test Data Management portal using Angular
+                and Material UI, increasing usage by 50% and reducing user
+                errors by 70%.
+              </li>
+              <li>
+                Integrated Okta SSO and implemented custom HTTP interceptors for
+                token management, enhancing authentication, authorization, and
+                security with Auth guards.
+              </li>
+              <li>
+                Upgraded Angular v7 to v10 which improved performance by
+                reducing bundle size and build times by 20%, built reusable UI
+                components while managing state using NgRx and RxJS and tested
+                using Jasmine & Karma.
+              </li>
+              <li>
+                Collaborated with backend teams to define API contracts,
+                implement efficient data models, and debug APIrelated issues for
+                seamless front-end and backend integration.
+              </li>
+              <li>
+                Mentored junior developers, established front-end best practices
+                and conducted knowledge-sharing sessions, improving team
+                proficiency and accelerating project delivery.
+              </li>
+            </ul>
+          </div>
+        </app-card>
+      </app-modal>
     </div>
   </section>
   <section>
@@ -75,22 +80,95 @@
     <div class="duration-role">
       <h2>Tata Consultancy Services Limited</h2>
       <h3>Systems Engineer(Software Engineer)</h3>
-      <button class="role-details-btn">Read More</button>
-      <div class="client-card">
-        <h4 class="client-card-title">Client: Eli Lilly</h4>
-        <h6 class="client-card-subtitle">Roles and Responsibilities:</h6>
-        <p class="client-card-content">Content</p>
-      </div>
-      <div class="client-card">
-        <h4 class="client-card-title">Client: Vodafone</h4>
-        <h6 class="client-card-subtitle">Roles and Responsibilities:</h6>
-        <p class="client-card-content">Content</p>
-      </div>
-      <div class="client-card">
-        <h4 class="client-card-title">Client: Pfizer</h4>
-        <h6 class="client-card-subtitle">Roles and Responsibilities:</h6>
-        <p class="client-card-content">Content</p>
-      </div>
+      <button class="role-details-btn" (click)="showModalExp1 = true">
+        Read More
+      </button>
+      <app-modal [isOpen]="showModalExp1" (close)="showModalExp1 = false">
+        <app-tabs [tabLabels]="['Eli Lilly', 'Vodafone', 'Pfizer']">
+          <ng-template #tabContent>
+            <app-card class="client-card">
+              <h3 class="client-card-title">Client: Eli Lilly</h3>
+              <h5 class="client-card-subtitle">Roles and Responsibilities:</h5>
+              <div class="client-card-content">
+                <ul>
+                  <li>
+                    Built a Campaign Management Tool for creating, managing, and
+                    tracking digital marketing activities across various media
+                    platforms, planned and conducted during a specific time
+                    interval, with server-side rendering using Node.js, Express,
+                    Handlebars and PostgreSQL.
+                  </li>
+                  <li>
+                    Integrated OIDC authentication with MFA in Node.js/Express
+                    server-rendered full-stack application, leveraging IAM
+                    provisioning for user account management and role-based
+                    access, improving operational efficiency by 15%.
+                  </li>
+                  <li>
+                    Implemented robust CI/CD pipelines using Heroku and Gitlab,
+                    automating build, test, and deployment processes across
+                    multiple environments.
+                  </li>
+                </ul>
+              </div>
+            </app-card>
+          </ng-template>
+          <ng-template #tabContent>
+            <app-card class="client-card">
+              <h3 class="client-card-title">Client: Vodafone</h3>
+              <h5 class="client-card-subtitle">Roles and Responsibilities:</h5>
+              <div class="client-card-content">
+                <ul>
+                  <li>
+                    Developed different UI components using Angular 2+ like
+                    offers section, reusable modals and animations for hybrid
+                    mobile application.
+                  </li>
+                  <li>
+                    Innovated custom SVG animation module using CSS keyframes in
+                    the splash screen of a hybrid mobile app, eliminating JS
+                    overhead by 35% while enhancing user experience and boosting
+                    app performance.
+                  </li>
+                  <li>
+                    Worked closely with QA teams to implement test-driven
+                    development (TDD) and CI/CD pipelines, ensuring seamless
+                    releases.
+                  </li>
+                </ul>
+              </div>
+            </app-card>
+          </ng-template>
+          <ng-template #tabContent>
+            <app-card class="client-card">
+              <h3 class="client-card-title">Client: Pfizer</h3>
+              <h5 class="client-card-subtitle">Roles and Responsibilities:</h5>
+              <div class="client-card-content">
+                <ul>
+                  <li>
+                    Developed a cross-platform hybrid mobile application using
+                    AngularJS and Ionic to monitor users' health, generate
+                    time-based statistical reports from user’s health data and
+                    connect with doctors, manage appointments, and set reminders
+                    for medications.
+                  </li>
+                  <li>
+                    Designed modular CSS architecture, reducing stylesheet
+                    maintenance time by 30% and improving cross-browser
+                    compatibility.
+                  </li>
+                  <li>
+                    Collaborated with customers to understand business
+                    requirements, proposed efficient solutions, and ensured
+                    timely delivery, end-to-end testing, code reviews and defect
+                    tracking using Agile methodology.
+                  </li>
+                </ul>
+              </div>
+            </app-card>
+          </ng-template>
+        </app-tabs>
+      </app-modal>
     </div>
   </section>
   <section>

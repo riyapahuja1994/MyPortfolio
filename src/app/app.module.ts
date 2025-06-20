@@ -11,6 +11,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CardComponent } from './shared/components/card/card.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ModalComponent } from './shared/components/modal/modal.component';
+import { TabsComponent } from './shared/components/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     ProjectsComponent,
     CardComponent,
     SkillsComponent,
+    ModalComponent,
+    TabsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
