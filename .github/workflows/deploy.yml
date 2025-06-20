@@ -33,4 +33,4 @@ jobs:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
           external_repository: riyapahuja1994/riyapahuja1994.github.io
           publish_branch: main
-          publish_dir: ./dist/App3/browser
+          publish_dir: ./dist/app3
