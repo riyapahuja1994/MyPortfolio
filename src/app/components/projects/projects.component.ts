@@ -11,13 +11,13 @@ export class ProjectsComponent {
     {
       name: 'Ecommerce App Frontend',
       description: 'An ecommerce app built with Angular and Node.js',
-      imageUrl: '/shop.png',
+      imageUrl: 'shop.png',
       link: 'https://github.com/riyapahuja1994/',
     },
     {
       name: 'Ecommerce App Backend',
       description: 'An ecommerce app built with Angular and Node.js',
-      imageUrl: '/e-com.png',
+      imageUrl: 'e-com.png',
       link: 'https://github.com/riyapahuja1994/',
     },
     {
