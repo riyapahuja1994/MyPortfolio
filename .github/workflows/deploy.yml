@@ -1,0 +1,36 @@
+name: Build and Deploy Angular App to GitHub Pages at riyapahuja.github.io
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Angular App
+        run: |
+          npm run build
+          cp dist/App3/browser/index.html dist/App3/browser/404.html
+
+      - name: Deploy to GitHub Pages Repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          external_repository: riyapahuja1994/riyapahuja1994.github.io
+          publish_branch: main
+          publish_dir: ./dist/App3/browser
