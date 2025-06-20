@@ -25,7 +25,7 @@ jobs:
       - name: Build Angular App
         run: |
           npm run build
-          cp dist/App3/browser/index.html dist/App3/browser/404.html
+          cp dist/app3/browser/index.html dist/app3/browser/404.html
 
       - name: Deploy to GitHub Pages Repo
         uses: peaceiris/actions-gh-pages@v3
