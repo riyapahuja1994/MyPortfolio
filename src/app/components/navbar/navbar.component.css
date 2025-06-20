@@ -13,6 +13,10 @@
   margin: 0.5em;
   font-size: 2em;
 }
+.applogo a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+}
 
 .appnav ul {
   padding: 0;
